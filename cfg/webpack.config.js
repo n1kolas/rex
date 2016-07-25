@@ -14,7 +14,7 @@ module.exports = {
         }
       },
       {
-        test:   /\.css$/,
+        test: /\.css$/,
         loader: "style-loader!css-loader!postcss-loader"
       }
     ]
@@ -24,6 +24,7 @@ module.exports = {
       require('precss'),
       require('autoprefixer'),
       require('postcss-font-magician'),
+      require('postcss-cssnext'),
       require('lost')
     ];
   },

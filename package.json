@@ -23,6 +23,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "lost": "^7.0.3",
+    "postcss-cssnext": "^2.7.0",
     "postcss-font-magician": "^1.4.0",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0",
