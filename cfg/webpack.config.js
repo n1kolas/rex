@@ -3,7 +3,7 @@ var autoprefixer = require ('autoprefixer');
 var fontMagician = require('postcss-font-magician');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/routes',
   output: {
     filename: './dist/bundle.js'
   },
