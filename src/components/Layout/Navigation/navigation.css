@@ -1,3 +1,5 @@
-.nav:first {
-
+.nav {
+  .active {
+    color: black;
+  }
 }
