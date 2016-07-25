@@ -1,7 +1,3 @@
-var precss = require('precss');
-var autoprefixer = require ('autoprefixer');
-var fontMagician = require('postcss-font-magician');
-
 module.exports = {
   entry: './src/routes',
   output: {
@@ -24,6 +20,11 @@ module.exports = {
     ]
   },
   postcss: function () {
-    return [precss, autoprefixer, fontMagician];
+    return [
+      require('precss'),
+      require('autoprefixer'),
+      require('postcss-font-magician'),
+      require('lost')
+    ];
   },
 }
