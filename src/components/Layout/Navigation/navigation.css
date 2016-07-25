@@ -1,4 +1,16 @@
-.nav {
+ul.nav {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  font-family: 'Slabo';
+  font-size: 21px;
+  li {
+    display: inline;
+    list-style: none;
+    a {
+      margin-right: 15px;
+      text-decoration: none;
+    }
+  }
   .active {
     color: black;
   }

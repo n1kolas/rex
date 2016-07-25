@@ -1,5 +1,6 @@
 var precss = require('precss');
 var autoprefixer = require ('autoprefixer');
+var fontMagician = require('postcss-font-magician');
 
 module.exports = {
   entry: './src/app.js',
@@ -23,6 +24,6 @@ module.exports = {
     ]
   },
   postcss: function () {
-    return [precss, autoprefixer];
+    return [precss, autoprefixer, fontMagician];
   },
 }

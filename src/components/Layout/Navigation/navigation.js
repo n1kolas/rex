@@ -7,8 +7,12 @@ export default React.createClass({
     return (
       <header>
         <ul role="navigation" className="nav">
-          <IndexLink to="/" activeClassName="active">Home</IndexLink>
-          <Link to="/example" activeClassName="active">Example</Link>
+          <li>
+            <IndexLink to="/" activeClassName="active">Home</IndexLink>
+          </li>
+          <li>
+            <Link to="/example" activeClassName="active">Example</Link>
+          </li>
         </ul>
       </header>
     )
