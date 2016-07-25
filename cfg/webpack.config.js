@@ -22,9 +22,8 @@ module.exports = {
   postcss: function () {
     return [
       require('precss'),
-      require('autoprefixer'),
-      require('postcss-font-magician'),
       require('postcss-cssnext'),
+      require('postcss-font-magician'),
       require('lost')
     ];
   },
