@@ -1,8 +1,12 @@
+var precss = require('precss');
+var autoprefixer = require ('autoprefixer');
+
 module.exports = {
   entry: './src/app.js',
   output: {
     filename: './dist/bundle.js'
   },
+  resolve: { extensions: ['', '.js', '.jsx', '.css'] },
   module: {
     loaders: [
       {
@@ -12,7 +16,13 @@ module.exports = {
           presets: ['es2015', 'react']
         }
       },
+      {
+        test:   /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
+      }
     ]
-  }
-  resolve: { extensions: ['', '.js', '.jsx'] },
+  },
+  postcss: function () {
+    return [precss, autoprefixer];
+  },
 }

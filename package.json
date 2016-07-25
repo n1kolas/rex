@@ -1,7 +1,7 @@
 {
   "name": "rex",
   "version": "1.0.0",
-  "description": "an opiniated react starterkit",
+  "description": "an opinionated react starterkit",
   "main": "app.js",
   "scripts": {
     "start": "webpack --config ./cfg/webpack.config.js --progress --colors --watch",
@@ -17,10 +17,13 @@
     "redux": "^3.5.2"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
