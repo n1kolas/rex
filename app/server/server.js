@@ -4,7 +4,7 @@ import path from 'path';
 
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
-import getRoutes from '../src/routes.js';
+import getRoutes from '../client/routes.js';
 
 const app = express();
 
@@ -32,11 +32,12 @@ function renderPage(markup) {
     <html>
       <head>
         <meta charset="UTF-8" />
+        <link href="../dist/style.css" type="text/css" />
         <title>rex - an opinionated react starterkit.</title>
       </head>
       <body>
         <div id="app">${markup}</div>
-        <script src="dist/prod.bundle.js"></script>
+        <script src="dist/bundle.js"></script>
       </body>
     </html>
    `
