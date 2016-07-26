@@ -4,7 +4,8 @@
   "description": "an opinionated react starterkit",
   "main": "app.js",
   "scripts": {
-    "start": "webpack --config ./cfg/webpack.config.js --progress --colors --watch",
+    "start": "webpack --config ./webpack.config.js --progress --colors --watch",
+    "server": "babel-node ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

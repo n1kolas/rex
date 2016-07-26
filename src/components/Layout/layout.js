@@ -1,7 +1,6 @@
 import React from 'react'
 import Navigation from './Navigation/navigation'
 import Footer from './Footer/footer'
-import './layout.css'
 
 export default React.createClass({
   render() {

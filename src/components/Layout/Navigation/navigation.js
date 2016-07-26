@@ -1,6 +1,5 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
-import './navigation.css'
 
 export default React.createClass({
   render() {

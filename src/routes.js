@@ -6,13 +6,21 @@ import Layout from './components/Layout/layout'
 import Front from './components/Front/front'
 import Example from './components/Example/example'
 
-ReactDOM.render((
-  <Router history={browserHistory}>
-    <Route path="/" component={Layout}>
-      // Index Route.
-      <IndexRoute component={Front} />
-      // Other Routes.
-      <Route path="/example" component={Example} />
-    </Route>
-  </Router>
-), document.getElementById('app'))
+var getRoutes = () => {
+  return (
+    <Router history={browserHistory}>
+      <Route path="/" component={Layout}>
+        // Index Route.
+        <IndexRoute component={Front} />
+        // Other Routes.
+        <Route path="/example" component={Example} />
+      </Route>
+    </Router>
+  )
+}
+
+if (typeof window !== 'undefined') {
+  ReactDOM.render(getRoutes(), document.getElementById('app'))
+}
+
+export default getRoutes;
