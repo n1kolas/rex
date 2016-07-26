@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './app/client/routes.js',
+  entry: './app/client/routes/routes.js',
   output: {
     filename: './dist/bundle.js'
   },

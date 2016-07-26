@@ -4,11 +4,11 @@ import path from 'path';
 
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
-import getRoutes from '../client/routes.js';
+import getRoutes from '../client/routes/routes.js';
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../dist'), {index: false}));
+app.use(express.static(path.join(__dirname, '../../dist'), {index: false}));
 
 app.get('*', (req, res) => {
   let routes = getRoutes()
@@ -32,7 +32,7 @@ function renderPage(markup) {
     <html>
       <head>
         <meta charset="UTF-8" />
-        <link href="../dist/style.css" type="text/css" />
+        <link href="dist/theme.css" type="text/css" />
         <title>rex - an opinionated react starterkit.</title>
       </head>
       <body>

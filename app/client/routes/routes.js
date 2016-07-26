@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { browserHistory, IndexRoute, Route, Router } from 'react-router'
 
-import Layout from './components/Layout/layout'
-import Front from './components/Front/front'
-import Example from './components/Example/example'
+import Layout from '../components/Layout/layout'
+import Front from '../components/Front/front'
+import Example from '../components/Example/example'
 
 var getRoutes = () => {
   return (
