@@ -8,3 +8,7 @@ An opinionated react starterkit.
 - axios (only as adependency no boilerplate code)
 - postcss (precss, autoprefixer, fontmagician)
 
+## How?
+npm start dev
+
+npm start server
