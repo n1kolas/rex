@@ -8,7 +8,9 @@ import getRoutes from '../client/routes/routes.js';
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../../dist'), {index: false}));
+const distPath = path.join(__dirname, '../../dist');
+
+app.use(express.static(distPath, {index: false}));
 
 app.get('*', (req, res) => {
   let routes = getRoutes()
@@ -32,12 +34,12 @@ function renderPage(markup) {
     <html>
       <head>
         <meta charset="UTF-8" />
-        <link href="dist/theme.css" type="text/css" />
+        <link rel="stylesheet" href="/theme.css" type="text/css" />
         <title>rex - an opinionated react starterkit.</title>
       </head>
       <body>
         <div id="app">${markup}</div>
-        <script src="dist/bundle.js"></script>
+        <script src="/bundle.js"></script>
       </body>
     </html>
    `
