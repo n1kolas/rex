@@ -1,1 +1,5 @@
-@import ./components/Layout/layout.css
+/* Variables */
+$bg: #fefefe;
+
+/* Component Imports */
+@import ./components/Layout/layout.css;
