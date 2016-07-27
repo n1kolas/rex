@@ -10,7 +10,7 @@ gulp.task('build', function () {
   ];
   return gulp.src('./client/theme.css')
   .pipe(postcss(processors))
-  .pipe(gulp.dest('../dist'));
+  .pipe(gulp.dest('../public/css'));
 });
 
 gulp.task('watch', function () {
