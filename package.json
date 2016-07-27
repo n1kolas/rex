@@ -4,8 +4,8 @@
   "description": "an opinionated react starterkit",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack --config ./app/webpack.config.js --progress --colors --watch & gulp --gulpfile ./app/gulpfile.js watch",
-    "server": "babel-node ./app/server/server.js",
+    "dev": "webpack --config ./app/webpack.config.js --progress --colors --watch & gulp --gulpfile ./app/gulp.config.js watch",
+    "prod": "babel-node ./app/server/render.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
