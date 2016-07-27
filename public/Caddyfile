@@ -1,0 +1,6 @@
+:1337
+log stdout
+
+rewrite {
+  to {path} {path}/ /index.html
+}

@@ -1,7 +1,7 @@
 module.exports = {
   entry: './app/client/routes/routes.js',
   output: {
-    filename: './dist/bundle.js'
+    filename: './public/js/bundle.js'
   },
   resolve: { extensions: ['', '.js', '.jsx'] },
   module: {
