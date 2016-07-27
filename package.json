@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --config ./app/webpack.config.js --progress --colors --watch & gulp --gulpfile ./app/gulp.config.js watch",
     "prod": "babel-node ./app/server/render.js",
-    "caddy": "caddy -conf=public/Caddyfile",
+    "caddy": "caddy -conf=public/Caddyfile -root=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
