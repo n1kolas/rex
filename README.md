@@ -25,7 +25,7 @@ Suggestions: redux, axios
 ### Build files with watch
 npm run dev
 
-## Build files without watch
+### Build files without watch
 npm run build
 
 ### Run local server (no hot reloading)
