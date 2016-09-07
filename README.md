@@ -23,11 +23,14 @@ Suggestions: redux, axios
 
 ## How?
 ### Build files with watch
-npm start dev
+npm run dev
+
+## Build files without watch
+npm run build
 
 ### Run local server (no hot reloading)
 npm run caddy
 
 ### Run production server
-npm start server
+npm run prod
 
