@@ -3,7 +3,7 @@ var neat = require('node-neat').includePaths[1];
 var refills = require('node-refills').includePath;
 
 module.exports = {
-  entry: './app/client/routes/routes.js',
+  entry: './src/client/routes/routes.js',
   output: {
     filename: './public/js/bundle.js'
   },

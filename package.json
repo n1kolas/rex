@@ -4,9 +4,9 @@
   "description": "an opinionated react starterkit",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack --config ./app/webpack.config.js --progress --colors --watch",
-    "build": "webpack --config ./app/webpack.config.js",
-    "prod": "babel-node ./app/server/render.js",
+    "dev": "webpack --config ./src/webpack.config.js --progress --colors --watch",
+    "build": "webpack --config ./src/webpack.config.js",
+    "prod": "babel-node ./src/server/render.js",
     "caddy": "caddy -conf=Caddyfile -root=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
