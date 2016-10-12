@@ -10,12 +10,12 @@ This project is just something that fits my needs when learning react, with tool
 ## Uses
 - react
 - react-router
-- postcss (precss, cssnext, fontmagician, lost) + gulp
+- sass with bourbon and neat
 
 Suggestions: redux, axios
 
 ## Supports
-- styling directly inside components (with postcss)
+- styling directly inside components (with sass)
 - easy routing provided by a layout which shows header and a footer on subroutes
 - server-side rendering with express (universal javascript)
 

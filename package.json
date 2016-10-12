@@ -4,8 +4,8 @@
   "description": "an opinionated react starterkit",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack --config ./app/webpack.config.js --progress --colors --watch & gulp --gulpfile ./app/gulp.config.js watch",
-    "build": "webpack --config ./app/webpack.config.js && gulp --gulpfile ./app/gulp.config.js build",
+    "dev": "webpack --config ./app/webpack.config.js --progress --colors --watch",
+    "build": "webpack --config ./app/webpack.config.js",
     "prod": "babel-node ./app/server/render.js",
     "caddy": "caddy -conf=Caddyfile -root=public",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,8 +24,6 @@
     "babel-preset-react": "^6.11.1",
     "node-bourbon": "^4.2.8",
     "node-neat": "^1.7.2",
-    "node-refills": "^1.0.1",
-    "node-reset-scss": "^1.0.1",
     "node-sass": "^3.10.1",
     "sass-loader": "^4.0.2",
     "webpack": "^1.13.1",
