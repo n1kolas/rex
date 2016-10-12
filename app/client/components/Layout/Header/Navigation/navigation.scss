@@ -1,0 +1,30 @@
+@import "bourbon";
+@import "neat";
+
+$link_active_color: #212121;
+$link_color: #7A7A7A;
+
+.header-navigation {
+  @include span-columns(12);
+  margin: 1.25% 0%;
+  ul {
+    padding-left: 0px;
+    li {
+      & + li {
+        margin-left: 40px;
+      }
+      display: inline-block;
+      list-style: none;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: $link_color;
+        &.active {
+          color: $link_active_color;
+        }
+      }
+    }
+  }
+}

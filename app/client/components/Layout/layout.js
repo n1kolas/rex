@@ -1,13 +1,15 @@
 import React from 'react'
-import Navigation from './Navigation/navigation'
+import Header from './Header/header'
 import Footer from './Footer/footer'
+
+import "./layout.scss"
 
 export default React.createClass({
   render() {
     return (
-      <div id="page-wrapper">
-        <Navigation />
-        <div id="content">
+      <div id="page-layout">
+        <Header />
+        <div id="page-content">
           {this.props.children}
         </div>
         <Footer />
