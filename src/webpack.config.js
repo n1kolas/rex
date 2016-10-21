@@ -5,7 +5,7 @@ var refills = require('node-refills').includePath;
 module.exports = {
   entry: './src/client/routes/routes.js',
   output: {
-    filename: './public/js/bundle.js'
+    filename: './dist/js/bundle.js'
   },
   module: {
     loaders: [
@@ -22,7 +22,7 @@ module.exports = {
       }
     ]
   },
-  resolve: { 
+  resolve: {
     modulesDirectories: ['node_modules'],
     extensions: ['', '.js', '.jsx']
   },

@@ -1,4 +1,4 @@
 npm-debug.log
 node_modules
-public/js
-public/css
+dist/js
+dist/css

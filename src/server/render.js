@@ -8,7 +8,7 @@ import getRoutes from '../client/routes/routes.js';
 
 const app = express();
 
-const distPath = path.join(__dirname, '../../public');
+const distPath = path.join(__dirname, '../../dist');
 
 app.use(express.static(distPath, {index: false}));
 

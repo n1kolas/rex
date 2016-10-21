@@ -9,7 +9,7 @@ export default React.createClass({
       <div className="header-navigation">
         <ul>
           <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-          <li><Link to="/example" activeClassName="active">Example</Link></li>
+          <li><Link to="/counter" activeClassName="active">Counter</Link></li>
         </ul>
       </div>
     )

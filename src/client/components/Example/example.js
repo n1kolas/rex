@@ -1,15 +1,21 @@
 import React from 'react'
+import {createStore} from 'redux'
+import Counter from './Counter/counter'
+import CounterReducer from '../../reducers/Counter/counter'
+
+const store = createStore(counter)
 
 export default React.createClass({
   render() {
     return (
-      <div>
+      <div className="counter">
         <p>
-          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          This is an example of the redux implementation.
         </p>
         <p>
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          You clicked {value} times
         </p>
+        <Counter value={store.getState()} onIncrement={() => store.dispatch({ type: 'INCREMENT'})} onDecrement={() => store.dispatch({ type: 'DECREMENT'})} />
       </div>
     )
   }

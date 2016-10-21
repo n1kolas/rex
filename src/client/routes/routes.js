@@ -4,7 +4,7 @@ import { browserHistory, IndexRoute, Route, Router } from 'react-router'
 
 import Layout from '../components/Layout/layout'
 import Front from '../components/Front/front'
-import Example from '../components/Example/example'
+import Counter from '../components/Example/Counter/counter'
 
 var getRoutes = () => {
   return (
@@ -13,7 +13,7 @@ var getRoutes = () => {
         // Index Route.
         <IndexRoute component={Front} />
         // Other Routes.
-        <Route path="/example" component={Example} />
+        <Route path="/counter" component={Counter} />
       </Route>
     </Router>
   )
